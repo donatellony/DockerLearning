@@ -1,0 +1,6 @@
+<ul class="column-body">
+  <h1>{{column.title}}</h1>
+  <li *ngFor="let card of column.cards">
+    <kb-card [card]="card" cdkDrag></kb-card>
+  </li>
+</ul>

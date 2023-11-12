@@ -1,0 +1,9 @@
+<ul cdkDropListGroup>
+  <li *ngFor="let column of columns">
+    <app-kb-column [column]="column" cdkDropList
+                   [cdkDropListData]="column"
+                   (cdkDropListDropped)="drop($event)"
+                   class="column">
+    </app-kb-column>
+  </li>
+</ul>

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KanbanBoard.API", "KanbanBoard.API\KanbanBoard.API.csproj", "{3865796E-6DF7-46D4-9EA5-5E4B7498739A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6DDEFB02-FA13-444E-AD39-5DAFB606DF3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KanbanBoard.Application", "KanbanBoard.Application\KanbanBoard.Application.csproj", "{C5831674-9C77-4607-95A3-6E1CA9974853}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KanbanBoard.Contracts", "KanbanBoard.Contracts\KanbanBoard.Contracts.csproj", "{68EF1677-59B2-4601-A4C3-9BEF26D4B80F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KanbanBoard.Domain", "KanbanBoard.Domain\KanbanBoard.Domain.csproj", "{E697C0CE-5779-4E9D-894F-0FC41C7EF9A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KanbanBoard.Infrastructure", "KanbanBoard.Infrastructure\KanbanBoard.Infrastructure.csproj", "{CC272B8B-E95C-4F4D-86F1-D4813B21AC0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3865796E-6DF7-46D4-9EA5-5E4B7498739A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3865796E-6DF7-46D4-9EA5-5E4B7498739A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3865796E-6DF7-46D4-9EA5-5E4B7498739A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3865796E-6DF7-46D4-9EA5-5E4B7498739A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5831674-9C77-4607-95A3-6E1CA9974853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5831674-9C77-4607-95A3-6E1CA9974853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5831674-9C77-4607-95A3-6E1CA9974853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5831674-9C77-4607-95A3-6E1CA9974853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68EF1677-59B2-4601-A4C3-9BEF26D4B80F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68EF1677-59B2-4601-A4C3-9BEF26D4B80F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68EF1677-59B2-4601-A4C3-9BEF26D4B80F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68EF1677-59B2-4601-A4C3-9BEF26D4B80F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E697C0CE-5779-4E9D-894F-0FC41C7EF9A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E697C0CE-5779-4E9D-894F-0FC41C7EF9A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E697C0CE-5779-4E9D-894F-0FC41C7EF9A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E697C0CE-5779-4E9D-894F-0FC41C7EF9A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC272B8B-E95C-4F4D-86F1-D4813B21AC0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC272B8B-E95C-4F4D-86F1-D4813B21AC0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC272B8B-E95C-4F4D-86F1-D4813B21AC0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC272B8B-E95C-4F4D-86F1-D4813B21AC0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3865796E-6DF7-46D4-9EA5-5E4B7498739A} = {6DDEFB02-FA13-444E-AD39-5DAFB606DF3B}
+		{C5831674-9C77-4607-95A3-6E1CA9974853} = {6DDEFB02-FA13-444E-AD39-5DAFB606DF3B}
+		{68EF1677-59B2-4601-A4C3-9BEF26D4B80F} = {6DDEFB02-FA13-444E-AD39-5DAFB606DF3B}
+		{E697C0CE-5779-4E9D-894F-0FC41C7EF9A2} = {6DDEFB02-FA13-444E-AD39-5DAFB606DF3B}
+		{CC272B8B-E95C-4F4D-86F1-D4813B21AC0C} = {6DDEFB02-FA13-444E-AD39-5DAFB606DF3B}
+	EndGlobalSection
+EndGlobal
