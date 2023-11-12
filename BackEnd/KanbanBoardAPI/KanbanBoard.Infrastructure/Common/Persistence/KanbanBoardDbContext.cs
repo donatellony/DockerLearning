@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 using KanbanBoard.Application.Common.Interfaces;
-using KanbanBoard.Domain.Boards;
+using KanbanBoard.Domain.Tables;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver;
 using MongoDB.EntityFrameworkCore.Extensions;

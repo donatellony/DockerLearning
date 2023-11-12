@@ -3,7 +3,7 @@
 namespace KanbanBoard.API.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("[controller]/[action]")]
 public class BaseController : ControllerBase
 {
 }

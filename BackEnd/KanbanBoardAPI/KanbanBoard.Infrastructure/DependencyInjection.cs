@@ -1,6 +1,7 @@
 ﻿using KanbanBoard.Application.Common.Interfaces;
 using KanbanBoard.Infrastructure.Common.Persistence;
 using KanbanBoard.Infrastructure.Common.Persistence.Configuration;
+using KanbanBoard.Infrastructure.Tables;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -27,10 +28,8 @@ public static class DependencyInjection
                 options.UseMongoDB(database.Client, database.DatabaseNamespace.DatabaseName);
             }
         );
-
-
-        // services.AddScoped<IGymsRepository, GymsRepository>();
-        // services.AddScoped<ISubscriptionsRepository, SubscriptionsRepository>();
+        
+        services.AddScoped<ITableRepository, TableRepository>();
         services.AddScoped<IUnitOfWork>(serviceProvider => serviceProvider.GetRequiredService<KanbanBoardDbContext>());
 
         return services;

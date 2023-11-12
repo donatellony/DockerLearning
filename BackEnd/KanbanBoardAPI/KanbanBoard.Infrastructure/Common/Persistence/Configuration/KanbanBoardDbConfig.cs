@@ -2,6 +2,6 @@
 
 public class KanbanBoardDbConfig
 {
-    public string ConnectionString { get; set; }
-    public string DatabaseName { get; set; }
+    public string ConnectionString { get; init; } = string.Empty;
+    public string DatabaseName { get; init; } = string.Empty;
 }
