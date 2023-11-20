@@ -5,7 +5,6 @@ using KanbanBoard.Infrastructure.Tables;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using MongoDB.Driver;
 
 namespace KanbanBoard.Infrastructure;
 
@@ -20,12 +19,10 @@ public static class DependencyInjection
     private static IServiceCollection AddPersistence(this IServiceCollection services)
     {
         services.ConfigureOptions<KanbanBoardDbConfigSetup>();
-        services.AddScoped<IMongoClient, KanbanBoardMongoClient>();
         services.AddDbContext<KanbanBoardDbContext>((serviceProvider, options) =>
             {
                 var dbConfig = serviceProvider.GetRequiredService<IOptions<KanbanBoardDbConfig>>();
-                var database = serviceProvider.GetRequiredService<IMongoClient>().GetDatabase(dbConfig.Value.DatabaseName);
-                options.UseMongoDB(database.Client, database.DatabaseNamespace.DatabaseName);
+                options.UseSqlServer(dbConfig.Value.ConnectionString);
             }
         );
         

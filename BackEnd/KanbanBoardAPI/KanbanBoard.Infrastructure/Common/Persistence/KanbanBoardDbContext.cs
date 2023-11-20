@@ -2,14 +2,12 @@
 using KanbanBoard.Application.Common.Interfaces;
 using KanbanBoard.Domain.Tables;
 using Microsoft.EntityFrameworkCore;
-using MongoDB.Driver;
-using MongoDB.EntityFrameworkCore.Extensions;
 
 namespace KanbanBoard.Infrastructure.Common.Persistence;
 
 public class KanbanBoardDbContext : DbContext, IUnitOfWork
 {
-    public DbSet<Table> Tables { get; set; } = null!;
+    public DbSet<Table> Tables => Set<Table>();
 
     public KanbanBoardDbContext(DbContextOptions options)
         : base(options)
@@ -25,6 +23,5 @@ public class KanbanBoardDbContext : DbContext, IUnitOfWork
     {
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         base.OnModelCreating(modelBuilder);
-        modelBuilder.Entity<Table>().ToCollection("Table");
     }
 }

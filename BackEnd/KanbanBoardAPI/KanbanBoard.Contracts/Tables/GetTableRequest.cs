@@ -1,5 +1,3 @@
-﻿using MongoDB.Bson;
+﻿namespace KanbanBoard.Contracts.Tables;
 
-namespace KanbanBoard.Contracts.Tables;
-
-public record GetTableRequest(ObjectId Id);
+public record GetTableRequest(long Id);
